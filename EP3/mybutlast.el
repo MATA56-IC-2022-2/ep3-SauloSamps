@@ -23,4 +23,4 @@
 	
 )
 
-(mybutlast '(a b c) 2) ;should return (1 2)
+(mybutlast '(a b c) 2) ;should return (a)
