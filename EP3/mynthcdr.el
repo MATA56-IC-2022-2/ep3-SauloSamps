@@ -1,4 +1,4 @@
-(defun mynthcdr (list1 index)
+(defun mynthcdr (index list1)
 	(defvar *original* list1)
 	(defvar *break-list* '())
 	
@@ -12,7 +12,7 @@
 	)
 	
 	(if (< index (length list1))
-		(write *break-list*)
+		(write *original*)
 	)
 	
 	(if (>= index (length list1))
@@ -21,4 +21,4 @@
 	
 )
 
-(mynthcdr '(1 2 3 4 5 6) 3) ;should return (1 2 3)
+(mynthcdr 2 '(a b c)) ;should return (c)
